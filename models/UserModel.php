@@ -24,7 +24,7 @@ class UserModel
         }
     }
 
-    public function getUserByEmail($email)
+    public function login($email)
     {
         $sql = "SELECT * FROM users WHERE email=?";
         $stmt = $this->conn->prepare($sql);
